@@ -37,9 +37,47 @@ navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('open');
 });
 
-// Close menu when a link is clicked
 navMenu.querySelectorAll('.nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('open');
   });
+});
+
+// ===== Theme Toggle (Dark/Light) =====
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('portfolio-theme');
+
+if (savedTheme) {
+  document.documentElement.setAttribute('data-theme', savedTheme);
+}
+
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('portfolio-theme', next);
+});
+
+// ===== Language Toggle (EN/ES) =====
+const langToggle = document.getElementById('langToggle');
+let currentLang = localStorage.getItem('portfolio-lang') || 'en';
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  const elements = document.querySelectorAll('[data-en][data-es]');
+  elements.forEach((el) => {
+    el.innerHTML = el.getAttribute('data-' + lang);
+  });
+  langToggle.querySelector('span').textContent = lang === 'en' ? 'ES' : 'EN';
+  document.documentElement.lang = lang;
+  localStorage.setItem('portfolio-lang', lang);
+}
+
+// Apply saved language on load
+if (currentLang !== 'en') {
+  applyLanguage(currentLang);
+}
+
+langToggle.addEventListener('click', () => {
+  applyLanguage(currentLang === 'en' ? 'es' : 'en');
 });

@@ -20,13 +20,22 @@
         <span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#about" class="nav-link" data-en="About" data-es="Sobre m&iacute;">About</a></li>
+        <li><a href="#experience" class="nav-link" data-en="Experience" data-es="Experiencia">Experience</a></li>
+        <li><a href="#tech" class="nav-link" data-en="Tech Stack" data-es="Tecnolog&iacute;as">Tech Stack</a></li>
+        <li><a href="#projects" class="nav-link" data-en="Projects" data-es="Proyectos">Projects</a></li>
+        <li><a href="#education" class="nav-link" data-en="Education" data-es="Educaci&oacute;n">Education</a></li>
+        <li><a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a></li>
       </ul>
+      <div class="nav-controls">
+        <button class="nav-ctrl-btn" id="langToggle" aria-label="Toggle language" title="Cambiar idioma">
+          <span>ES</span>
+        </button>
+        <button class="nav-ctrl-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -34,12 +43,12 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="hero-content">
-        <p class="hero-greeting reveal">Hi, I'm</p>
+        <p class="hero-greeting reveal" data-en="Hi, I'm" data-es="Hola, soy">Hi, I'm</p>
         <h1 class="hero-name reveal">Brian Olsen</h1>
         <h2 class="hero-title reveal">Full Stack Developer</h2>
-        <p class="hero-tagline reveal">7+ years building robust web &amp; mobile applications across regulated industries. Based in Buenos Aires, Argentina.</p>
+        <p class="hero-tagline reveal" data-en="7+ years building robust web &amp; mobile applications across regulated industries. Based in Buenos Aires, Argentina." data-es="+7 a&ntilde;os construyendo aplicaciones web y m&oacute;viles en industrias reguladas. Basado en Buenos Aires, Argentina.">7+ years building robust web &amp; mobile applications across regulated industries. Based in Buenos Aires, Argentina.</p>
         <div class="hero-cta reveal">
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#contact" class="btn btn-primary" data-en="Get in Touch" data-es="Contactar">Get in Touch</a>
           <a href="https://github.com/briannolsen" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
@@ -52,11 +61,11 @@
   <!-- About -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title reveal">About Me</h2>
+      <h2 class="section-title reveal" data-en="About Me" data-es="Sobre M&iacute;">About Me</h2>
       <div class="about-content reveal">
-        <p>I'm a Full Stack Developer with over 7 years of experience designing and delivering high-impact applications for regulated industries, including financial services and insurance. I specialize in building scalable web and mobile solutions using modern frameworks like Angular, React, .NET, and Python.</p>
-        <p>My work is driven by metrics and reliability &mdash; from achieving 99.9% uptime on critical financial systems to automating cloud infrastructure costs with Python and AWS. I thrive in environments where technical excellence meets real business impact.</p>
-        <p>Currently based in Buenos Aires, I'm pursuing a BS in Information Systems while continuously expanding my skills in AI and cloud technologies.</p>
+        <p data-en="I'm a Full Stack Developer with over 7 years of experience designing and delivering high-impact applications for regulated industries, including financial services and insurance. I specialize in building scalable web and mobile solutions using modern frameworks like Angular, React, .NET, and Python." data-es="Soy un Desarrollador Full Stack con m&aacute;s de 7 a&ntilde;os de experiencia dise&ntilde;ando y entregando aplicaciones de alto impacto para industrias reguladas, incluyendo servicios financieros y seguros. Me especializo en construir soluciones web y m&oacute;viles escalables usando frameworks modernos como Angular, React, .NET y Python.">I'm a Full Stack Developer with over 7 years of experience designing and delivering high-impact applications for regulated industries, including financial services and insurance. I specialize in building scalable web and mobile solutions using modern frameworks like Angular, React, .NET, and Python.</p>
+        <p data-en="My work is driven by metrics and reliability &mdash; from achieving 99.9% uptime on critical financial systems to automating cloud infrastructure costs with Python and AWS. I thrive in environments where technical excellence meets real business impact." data-es="Mi trabajo est&aacute; impulsado por m&eacute;tricas y confiabilidad &mdash; desde lograr 99.9% de uptime en sistemas financieros cr&iacute;ticos hasta automatizar costos de infraestructura cloud con Python y AWS. Me destaco en entornos donde la excelencia t&eacute;cnica se encuentra con el impacto real de negocio.">My work is driven by metrics and reliability &mdash; from achieving 99.9% uptime on critical financial systems to automating cloud infrastructure costs with Python and AWS. I thrive in environments where technical excellence meets real business impact.</p>
+        <p data-en="Currently based in Buenos Aires, I'm pursuing a BS in Information Systems while continuously expanding my skills in AI and cloud technologies." data-es="Actualmente basado en Buenos Aires, estoy cursando la Licenciatura en Sistemas de Informaci&oacute;n mientras ampl&iacute;o continuamente mis habilidades en IA y tecnolog&iacute;as cloud.">Currently based in Buenos Aires, I'm pursuing a BS in Information Systems while continuously expanding my skills in AI and cloud technologies.</p>
       </div>
     </div>
   </section>
@@ -64,20 +73,20 @@
   <!-- Experience -->
   <section class="section section-alt" id="experience">
     <div class="container">
-      <h2 class="section-title reveal">Experience</h2>
+      <h2 class="section-title reveal" data-en="Experience" data-es="Experiencia">Experience</h2>
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Cloud Infrastructure Analyst</h3>
+              <h3 data-en="Cloud Infrastructure Analyst" data-es="Analista de Infraestructura Cloud">Cloud Infrastructure Analyst</h3>
               <span class="timeline-company">Red Link S.A.</span>
             </div>
             <span class="timeline-date">2023 &ndash; 2025</span>
             <ul class="timeline-details">
-              <li>Automated AWS cost tracking and reporting with Python, reducing manual effort and improving budget visibility</li>
-              <li>Managed 50+ servers across hybrid cloud environments ensuring high availability</li>
-              <li>Maintained 99.9% uptime on mission-critical financial transaction systems</li>
+              <li data-en="Automated AWS cost tracking and reporting with Python, reducing manual effort and improving budget visibility" data-es="Automati&ccedil;&eacute; reportes de costos AWS con Python, reduciendo el esfuerzo manual y mejorando la visibilidad presupuestaria">Automated AWS cost tracking and reporting with Python, reducing manual effort and improving budget visibility</li>
+              <li data-en="Managed 50+ servers across hybrid cloud environments ensuring high availability" data-es="Administr&eacute; +50 servidores en entornos cloud h&iacute;bridos asegurando alta disponibilidad">Managed 50+ servers across hybrid cloud environments ensuring high availability</li>
+              <li data-en="Maintained 99.9% uptime on mission-critical financial transaction systems" data-es="Mantuve 99.9% de uptime en sistemas financieros cr&iacute;ticos de transacciones interbancarias">Maintained 99.9% uptime on mission-critical financial transaction systems</li>
             </ul>
           </div>
         </div>
@@ -85,14 +94,14 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Full Stack Web Developer</h3>
+              <h3 data-en="Full Stack Web Developer" data-es="Desarrollador Web Full Stack">Full Stack Web Developer</h3>
               <span class="timeline-company">CNP Seguros</span>
             </div>
             <span class="timeline-date">2021 &ndash; 2023</span>
             <ul class="timeline-details">
-              <li>Built a self-service portal used by 200+ vendors, streamlining operations and reducing support tickets</li>
-              <li>Developed an online quoting engine that accelerated the sales pipeline</li>
-              <li>Worked with Angular on the frontend and .NET/C# on the backend in an enterprise environment</li>
+              <li data-en="Built a self-service portal used by 200+ vendors, streamlining operations and reducing support tickets" data-es="Constru&iacute; un portal de autogesti&oacute;n para +200 proveedores, optimizando operaciones y reduciendo tickets de soporte">Built a self-service portal used by 200+ vendors, streamlining operations and reducing support tickets</li>
+              <li data-en="Developed an online quoting engine that accelerated the sales pipeline" data-es="Desarroll&eacute; un motor de cotizaci&oacute;n online que aceler&oacute; el ciclo de ventas">Developed an online quoting engine that accelerated the sales pipeline</li>
+              <li data-en="Worked with Angular on the frontend and .NET/C# on the backend in an enterprise environment" data-es="Trabaj&eacute; con Angular en frontend y .NET/C# en backend en un entorno enterprise">Worked with Angular on the frontend and .NET/C# on the backend in an enterprise environment</li>
             </ul>
           </div>
         </div>
@@ -100,14 +109,14 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Mobile &amp; Web Developer</h3>
+              <h3 data-en="Mobile &amp; Web Developer" data-es="Desarrollador Mobile &amp; Web">Mobile &amp; Web Developer</h3>
               <span class="timeline-company">Algeiba DEV</span>
             </div>
             <span class="timeline-date">2018 &ndash; 2021</span>
             <ul class="timeline-details">
-              <li>Shipped 5+ production applications across web and mobile platforms</li>
-              <li>Developed "Primero Vos," a cross-platform mobile app serving end users</li>
-              <li>Built interactive dashboards and admin panels for data-driven decision making</li>
+              <li data-en="Shipped 5+ production applications across web and mobile platforms" data-es="Entregu&eacute; +5 aplicaciones en producci&oacute;n en plataformas web y m&oacute;viles">Shipped 5+ production applications across web and mobile platforms</li>
+              <li data-en='Developed "Primero Vos," a cross-platform mobile app serving end users' data-es='Desarroll&eacute; &quot;Primero Vos&quot;, app m&oacute;vil cross-platform de prevenci&oacute;n de violencia de g&eacute;nero'>Developed "Primero Vos," a cross-platform mobile app serving end users</li>
+              <li data-en="Built interactive dashboards and admin panels for data-driven decision making" data-es="Constru&iacute; dashboards interactivos y paneles de administraci&oacute;n para toma de decisiones basada en datos">Built interactive dashboards and admin panels for data-driven decision making</li>
             </ul>
           </div>
         </div>
@@ -118,7 +127,7 @@
   <!-- Tech Stack -->
   <section class="section" id="tech">
     <div class="container">
-      <h2 class="section-title reveal">Tech Stack</h2>
+      <h2 class="section-title reveal" data-en="Tech Stack" data-es="Tecnolog&iacute;as">Tech Stack</h2>
       <div class="tech-grid reveal">
         <div class="tech-badge">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" width="40" height="40">
@@ -179,7 +188,7 @@
   <!-- Projects -->
   <section class="section section-alt" id="projects">
     <div class="container">
-      <h2 class="section-title reveal">Projects</h2>
+      <h2 class="section-title reveal" data-en="Projects" data-es="Proyectos">Projects</h2>
       <div class="projects-grid">
         <div class="project-card reveal">
           <div class="project-header">
@@ -189,7 +198,7 @@
             </a>
           </div>
           <h3 class="project-title">Padel Store</h3>
-          <p class="project-desc">E-commerce de paletas de padel. Product catalog with brand filtering, shopping cart with localStorage persistence, checkout with form validation, and SweetAlert2 notifications.</p>
+          <p class="project-desc" data-en="Full-featured e-commerce platform for padel rackets. Product catalog with brand filtering, shopping cart with localStorage persistence, checkout with form validation, and real-time order tracking via Firebase." data-es="Plataforma e-commerce completa para paletas de padel. Cat&aacute;logo de productos con filtro por marca, carrito con persistencia en localStorage, checkout con validaci&oacute;n de formularios y seguimiento de pedidos en tiempo real via Firebase.">Full-featured e-commerce platform for padel rackets. Product catalog with brand filtering, shopping cart with localStorage persistence, checkout with form validation, and real-time order tracking via Firebase.</p>
           <div class="project-tags">
             <span class="tag">React</span>
             <span class="tag">Vite</span>
@@ -205,7 +214,7 @@
             </a>
           </div>
           <h3 class="project-title">DescuentosRata</h3>
-          <p class="project-desc">Agregador de descuentos bancarios argentinos. Search by store, filter by bank, map with geolocation, 17+ banks integrated, Playwright scrapers, and APScheduler for automated data collection.</p>
+          <p class="project-desc" data-en="Argentine banking discount aggregator. Search stores by name, filter by bank, interactive map with geolocation, 17+ banks integrated, automated web scraping with Playwright, and scheduled data collection with APScheduler." data-es="Agregador de descuentos bancarios argentinos. B&uacute;squeda de comercios por nombre, filtro por banco, mapa interactivo con geolocalizaci&oacute;n, +17 bancos integrados, scraping automatizado con Playwright y recolecci&oacute;n programada con APScheduler.">Argentine banking discount aggregator. Search stores by name, filter by bank, interactive map with geolocation, 17+ banks integrated, automated web scraping with Playwright, and scheduled data collection with APScheduler.</p>
           <div class="project-tags">
             <span class="tag">Flutter</span>
             <span class="tag">Python</span>
@@ -222,7 +231,7 @@
             </a>
           </div>
           <h3 class="project-title">Chicho Reserva</h3>
-          <p class="project-desc">Sistema de reservas. A reservation management system with a modern UI, built for streamlined booking workflows.</p>
+          <p class="project-desc" data-en="Reservation management system with a modern UI, real-time availability tracking, and streamlined booking workflows powered by Firebase." data-es="Sistema de gesti&oacute;n de reservas con UI moderna, seguimiento de disponibilidad en tiempo real y flujos de reserva optimizados con Firebase.">Reservation management system with a modern UI, real-time availability tracking, and streamlined booking workflows powered by Firebase.</p>
           <div class="project-tags">
             <span class="tag">React</span>
             <span class="tag">Vite</span>
@@ -237,15 +246,15 @@
   <!-- Education -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title reveal">Education</h2>
+      <h2 class="section-title reveal" data-en="Education" data-es="Educaci&oacute;n">Education</h2>
       <div class="education-grid">
         <div class="education-card reveal">
           <div class="education-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
           </div>
-          <h3>BS in Information Systems</h3>
+          <h3 data-en="BS in Information Systems" data-es="Lic. en Sistemas de Informaci&oacute;n">BS in Information Systems</h3>
           <p class="education-institution">Universidad de Luj&aacute;n</p>
-          <span class="education-date">In Progress</span>
+          <span class="education-date" data-en="In Progress" data-es="En curso">In Progress</span>
         </div>
         <div class="education-card reveal">
           <div class="education-icon">
@@ -270,8 +279,8 @@
   <!-- Contact -->
   <section class="section section-alt" id="contact">
     <div class="container">
-      <h2 class="section-title reveal">Get in Touch</h2>
-      <p class="contact-intro reveal">I'm always open to new opportunities and interesting projects. Feel free to reach out.</p>
+      <h2 class="section-title reveal" data-en="Get in Touch" data-es="Contacto">Get in Touch</h2>
+      <p class="contact-intro reveal" data-en="I'm always open to new opportunities and interesting projects. Feel free to reach out." data-es="Siempre abierto a nuevas oportunidades y proyectos interesantes. No dudes en contactarme.">I'm always open to new opportunities and interesting projects. Feel free to reach out.</p>
       <div class="contact-links reveal">
         <a href="mailto:briann.olsenn@gmail.com" class="contact-card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
